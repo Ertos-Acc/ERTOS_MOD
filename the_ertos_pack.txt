@@ -1,0 +1,198 @@
+﻿----------------------------------
+gamerule changes:
+----------------------------------
+
+300 starting eco
+regen price 1.4x
+camo price 1.5x
+phayze price 1.5x, jump 5%, speed massively reduced
+0 bloon boosts, 1.2x
+0 tower boosts, 0.85s
+// TODO add boosts to hero levels
+ramping start 20 with 1.3x per round, after 31 2x per round
+speed ramping start 25, +5% per round
+
+----------------------------------
+tower changes:
+80% sellback, if a tower does not have this, TELL ME
+----------------------------------
+
+farm changes:
+on buy does not take account of which part of the round it is, also did the same for upgrades but will need to wait how that pans out
+(in theory the line above should make it so farm always gives the full amount on the round it is bought/upgraded, let's hope no bugs)
+infinite lifetime
+base cost 1000
+base bananas 2
+banana value 50
+1xx cost 450, bananas +1
+2xx cost 2000, bananas +5
+3xx cost 2800, bananas +8 (total 16)
+4xx cost 28k, crates 10, value 500
+5xx cost 100k, value 1000, buff 10%
+x1x cost 0, does nothing
+x2x cost 3k, buff 20%
+x3x cost 4k, interest 10%, capacity 100k (yes, and carries on for later tiers), end of round bonus 300
+x4x imf money 20k, debt 30k, cooldown 20s (initial 10s), no longer locks the ability but 80% goes towards paying debt, end of round crosspath bonus 200
+x5x cost 50k, no initial cooldown, end of round crosspath bonus 1000
+xx1 cost 800
+xx2 cost 400
+xx3 cost 5000, bananas +18 (total 20 base, 26 with top xpath)
+xx4 cost 16k, value 150
+xx5 cost 55k, +10k end of round
+
+dart changes:
+reduced emission delay
+bigger projectile radius (2 -> 3)
+smfc and pmfc attack cooldown doubled (slower)
+base cost 100
+2xx cost 200, pierce bonus 2 (smfc too)
+3xx cost 500, faster projectile, lower lifetime, +20 pierce, 1.5 reload, bigger proj radius, 1 damage, 002 xpath +1 damage, reduced animation delay
+4xx cost 2500, 100 pierce, bigger proj radius and speed, no change to damage
+x3x cost 250
+xx1 cost 50
+xx3 pierce +2 (from +5), bigger range, bigger proj speed
+xx4 cost 5000, damage 8, reload 1.2 (from 0.75)
+xx5 reload 0.4 (from 0.13), pierce +4, damage +12 (20 total)
+
+bomb changes:
+moved unstoppable damage type to t4s
+base cost 650, 40 pierce, more radius, 2s att spd
+2xx cost 500, moved the extra damage to t4, more pierce
+3xx cost 800
+xx1 cost 100
+xx2 frags have bigger collision and pierce
+xx3 cost 800, more explosion radius
+xx4 damage +1
+
+sub changes:
+base cost 250
+1xx cost 100
+2xx cost 300
+3xx cost 900 decamo pierce 30 from 75 but slightly faster
+5xx ability buff nerfed to 75% from 50%
+x3x missile 80 pierce, 1 damage
+xx3 cost 700
+xx4 cost 3000, dart damage 2
+xx5 cost 35k, emission time 0
+
+sniper changes:
+REMOVED CAMO DAMAGE NONSENSE
+reload time 1.5 from 1.35
+base cost 200
+1xx cost 350, damage +3 (5 total)
+2xx cost 1200, damage +3 (8 total, oneshots rainbows)
+3xx mobe damage +10
+// TODO maim mobe less stall
+5xx cost 40k, damage 500, durations buffed but bonus damage +2
+x1x cost 150
+x2x cost 250, 8 shrapnel evenly spaced around like a tack shooter
+x4x delivery time halved, cash drop 1k
+x5x buff to other snipers 15%
+xx1 cost 250
+xx2 reload -35%
+xx3 cost 1500, reload -50%
+xx4 cost 3300
+xx5 cost 20k, reload /2.5x
+
+dartling changes:
+doubled swivel speed
+reduced spread to 15 degrees
+base cost 900, pierce 3, attack cooldown 0.25 (vanilla is 0.2), higher projectile radius
+// TODO top path should be pierce focused
+1xx spread massively reduced
+2xx cost 1000, duration 2.1s from 1.1s
+3xx cost 4500, pierce +8 (11 total), damage 1
+4xx cost 16k, higher collision radius, lifespan doubled, mobe damage 10 -> 4
+5xx damage 50, first hit damage 100
+// TODO middle path mobe damage and low pierce
+x2x cost 700, attack speed bonus 30%
+x3x cost 2600, explosion pierce 3, 2 explosions, attack speed bonus 30%
+x4x cost 4000, ability: less spread, damage 2 (rockets themselves damage 1), pierce 2, moab damage 5, cooldown 15, duration 7.5
+x5x cost 80k, mobe damage 160, reload time 2x (instead of 3x vanilla)
+// TODO bottom path crowd control/mix
+xx1 MORE swivel
+xx2 cost 1100, makes ROD first hit apply to 6 bloons
+xx3 cost 2000, projectiles 3, damage 1, pierce +2, proj radius 2 (from 1), reload time 0.6 (from 1.5), longer lifespan, more speed variation
+xx4 cost 21k, damage 2
+xx5 damage 5
+
+ninja changes:
+xx3 flash bomb every 4th shot
+
+----------------------------------
+hero changes:
+heroes have massively increased cost, sellback 30%, and have removed leveling
+some heroes give boosts (but they are quite weak)
+----------------------------------
+
+quincy:
+cost 3000
+damage 1, pierce 18, 2 projectiles + bombs
+attack cooldown 1.5s
+arrows have higher retarget radius
+"stop_child_bloons_being_retargeted": true, no idea what it does but set it to true, hopefully makes it shoot better
+increased projectile radius and speed
+rapidshot cooldown 60, duration 5, attack speed bonus 50%
+storm of arrows cooldown 120, duration 10, damage 1, ticks every second, chance to hit 100%, 5x damage to cerams and mobes
+
+gwen:
+cost 2000
+2 projectiles with burn and frequent heat it up (think of it as rof), but no hiu buff
+cocktail duration and pierce nerfed, burns mobes
+firestorm has slower dot and no initial damage to bloons, gives towers +1 damage
+
+beetienne:
+cost 2500
+2 swarms
+life heal 5, hive life cost 20
+hive cooldown 90
+
+
+benjamin:
+cost 18000
+1000 per round
+biohack +8 damage 10 seconds, 67 tower limit, 999 downtime, 30 cooldown
+
+----------------------------------
+bloon send changes:
+----------------------------------
+
+reds cost 26, amount 7, delay 0.1
+sblues cost 20
+gblues cost 42, amount 6, eco 1.6, delay 1.2
+sgreens cost 23, amount 4
+ggreens cost 60, amount 5, eco 2.2, delay 0.1
+syellows cost 36, amount 3, eco 1.3, delay 0.35
+gyellows cost 75, amount 5, eco 2.7, delay 0.1
+spinks cost 42, amount 3, eco 1.7, delay 0.25
+gpinks cost 90, amount 6, eco 3.2, delay 0.04
+swhites cost 75, amount 3, eco 3, delay 0.3
+gwhites cost 150, eco 5
+sblacks cost 90, amount 3, eco 3.5, delay 0.18
+gblacks cost 175, eco 6
+spurples cost 80, amount 4, eco 3.3, delay 0.3
+gpurples cost 200, eco 5, delay 0.05
+szebras cost 100, eco 3.2
+gzebras cost 250, amount 4, eco 7, delay 0.12
+sleads cost 100, eco 5 (intended)
+gleads cost 220, eco 8
+tleads cost 2500, eco 30, delay 0.03
+srainbow cost 80, eco 2.5
+grainbows cost 350, eco 11, delay 0.13
+sceram cost 250, eco 7, delay 0.9
+gcerams cost 500, eco 10, delay 0.17
+tcerams cost 5000, eco 100, delay 0.06
+sMOAB cost 2000
+gMOAB cost 1500
+tMOAB cost 8000, eco loss 0, delay 0.1
+sBFB cost 4000, eco loss 0
+gBFB cost 3000, eco loss 0
+tBFB cost 15k, eco loss 0, delay 0.18
+sZOMG cost 10k, eco loss 0
+gZOMG cost 9k, eco loss 0
+gZOMG r26 cost 8k, eco loss 0
+tZOMG cost 22k, eco loss 0, delay 0.5
+sDDT cost 6k, eco loss 50, delay 3
+gDDT cost 15k, eco loss 100, delay 0.5
+sBAD cost 25k, eco loss 200
+gBAD cost 25k, eco loss 200
