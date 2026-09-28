@@ -772,7 +772,7 @@
         "tower_xp_multiplier": 1.0,
         "placement_cost_multiplier": 1.0,
         "upgrade_cost_multipliers": [],
-        "sell_value_multiplier": 0.699999988079071,
+        "sell_value_multiplier": 0.8,
         "target_reticle_scale": "reticle_scale",
         "fire_weapons_in_sequence": "fire_weapons_in_sequence",
         "weapon_props": [

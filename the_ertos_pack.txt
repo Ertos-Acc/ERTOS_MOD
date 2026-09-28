@@ -14,7 +14,8 @@ speed ramping start 25, +5% per round
 
 ----------------------------------
 tower changes:
-80% sellback, if a tower does not have this, TELL ME
+80% sellback, if a tower does not have this, TELL ME instead of complaining about it
+removed emission delay on most things, this means towers will not wait for their animation before attacking
 ----------------------------------
 
 farm changes:
@@ -63,6 +64,18 @@ xx1 cost 100
 xx2 frags have bigger collision and pierce
 xx3 cost 800, more explosion radius
 xx4 damage +1
+
+ice changes:
+base cost 400, 30 pierce, 2.5s att spd
+2xx cost 250
+3xx cost 1500, range +5, shards pierce 2
+4xx embrit time 2.5s, now soaks
+5xx cost 20k, no more att spd bonus, status damage +2
+x1x nerfed att spd bonus and freeze duration (this means it will rehit)
+x2x cost 400
+x3x cost 3000, pierce bonus 30, moved projectile radius down here from snowmi
+xx3 cost 1000, att spd 1.5s, more lifespan, higher blast radius
+xx4 cost 4000
 
 sub changes:
 base cost 250
@@ -116,8 +129,46 @@ xx3 cost 2000, projectiles 3, damage 1, pierce +2, proj radius 2 (from 1), reloa
 xx4 cost 21k, damage 2
 xx5 damage 5
 
+mortar changes:
+base cost 550, att spd 2s
+xx2 burny dot duration 2.5s, interval 1.2s
+
+druid changes:
+no rng, less attack spread, faster att spd
+2xx att spd 2s
+4xx ball att spd 5s but 1 damage
+5xx att spd 3s, 120 pierce
+x3x cash vine gives $200, 30s cd, can get buffed by attack speed 
+xx5 cost 50k, no attack speed buff
+
 ninja changes:
 xx3 flash bomb every 4th shot
+
+engi changes:
+base att spd 0.6s
+2xx cost 300
+4xx cost 2500, spawns 1 sentry on buy
+x1x cost 150
+x2x cost 250
+x4x TODO something needs to change but idk what
+xx1 9 pierce
+xx2 pin soaks through 1 more layer
+
+spac changes:
+base cost 350, pierce 10
+spike movement 0.25s
+spike lifespan 20s
+1xx cost 300, +5 pierce
+2xx cost 200
+3xx cost 1500, +10 pierce, 1 damage with extra ceram and fort
+4xx cost 12.5k, unchanged from vanilla
+x1x cost 400
+x4x can be buffed by attack speed again
+xx1 lifespan 40s
+xx2 cost 300
+xx3 lifespan 80s
+xx4 cost 2500, damage 2, lifespan 120s
+xx5 damage 12, lifespan 200s
 
 ----------------------------------
 hero changes:
@@ -141,17 +192,39 @@ cost 2000
 cocktail duration and pierce nerfed, burns mobes
 firestorm has slower dot and no initial damage to bloons, gives towers +1 damage
 
+obyn:
+cost 2700
+main attack buffed slightly
+brambles 80 pierce 45s cd
+trees 1000 rbe, $0.5 per, 90s cd initially empty, limit 3 at once
+has pierce and att spd bonus (15%), not damage and discount
+
+etienne:
+cost 5500
+4 drones, 4 pierce, 3 damage
+global camo and half a mib
+
 beetienne:
 cost 2500
 2 swarms
 life heal 5, hive life cost 20
 hive cooldown 90
 
-
 benjamin:
-cost 18000
-1000 per round
-biohack +8 damage 10 seconds, 67 tower limit, 999 downtime, 30 cooldown
+cost 12000
+1000 per round, 15% bank hack
+biohack +8 damage 15s, 67 tower limit, 999s downtime, 30s cooldown
+trojan 2s
+
+DJCLOWN:
+cost 100
+does literally nothing
+
+bonnie:
+cost 1000
+has all minecart levels unlocked
+minecart sellback 80%
+explosion damage halved
 
 ----------------------------------
 bloon send changes:
